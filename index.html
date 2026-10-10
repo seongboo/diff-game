@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>틀린그림찾기</title>
+  <meta name="description" content="매일 새로 나오는 틀린그림찾기 퍼즐. 두 그림에서 다른 곳을 찾아보세요.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bar">
+    <h1>틀린그림찾기</h1>
+    <div class="stats" aria-live="polite">
+      <span class="stat"><span class="label">찾음</span> <strong id="found">0 / 0</strong></span>
+      <span class="stat"><span class="label">시간</span> <strong id="timer">00:00</strong></span>
+      <span class="stat"><span class="label">실수</span> <strong id="misses">0</strong></span>
+    </div>
+  </header>
+
+  <main>
+    <div class="meta">
+      <span id="puzzle-title">불러오는 중…</span>
+      <span id="difficulty" class="chip" hidden></span>
+    </div>
+
+    <section class="board" id="board">
+      <div class="frame" data-side="a">
+        <img id="img-a" alt="왼쪽 그림" draggable="false">
+        <div class="layer"></div>
+      </div>
+      <div class="frame" data-side="b">
+        <img id="img-b" alt="오른쪽 그림" draggable="false">
+        <div class="layer"></div>
+      </div>
+    </section>
+
+    <p id="message" class="message" hidden></p>
+
+    <div class="actions">
+      <button id="btn-prev" type="button" aria-label="이전 퍼즐">‹ 이전</button>
+      <button id="btn-hint" type="button" class="primary">힌트 <span id="hints-left">3</span></button>
+      <button id="btn-next" type="button" aria-label="다음 퍼즐">다음 ›</button>
+    </div>
+    <p class="help">두 그림에서 다른 곳을 찾아 아무 쪽이나 누르세요.</p>
+  </main>
+
+  <dialog id="done">
+    <h2>다 찾았어요!</h2>
+    <p class="stars" id="done-stars" aria-label="별점"></p>
+    <dl class="result">
+      <div><dt>시간</dt><dd id="done-time"></dd></div>
+      <div><dt>실수</dt><dd id="done-misses"></dd></div>
+      <div><dt>힌트</dt><dd id="done-hints"></dd></div>
+      <div><dt>최고 기록</dt><dd id="done-best"></dd></div>
+    </dl>
+    <div class="actions">
+      <button id="btn-retry" type="button">다시 하기</button>
+      <button id="btn-done-next" type="button" class="primary">다음 퍼즐</button>
+    </div>
+  </dialog>
+
+  <script src="game.js"></script>
+</body>
+</html>

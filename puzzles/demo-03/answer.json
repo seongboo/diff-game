@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "source": "synthetic",
+  "width": 800,
+  "height": 600,
+  "seed": 3,
+  "difficulty": "easy",
+  "verified": true,
+  "differences": [
+    {
+      "id": 1,
+      "kind": "erase",
+      "x": 81,
+      "y": 112,
+      "w": 76,
+      "h": 65,
+      "strength": 22.1
+    },
+    {
+      "id": 2,
+      "kind": "mirror",
+      "x": 415,
+      "y": 187,
+      "w": 79,
+      "h": 60,
+      "strength": 25.5
+    },
+    {
+      "id": 3,
+      "kind": "mirror",
+      "x": 294,
+      "y": 229,
+      "w": 61,
+      "h": 64,
+      "strength": 29.4
+    },
+    {
+      "id": 4,
+      "kind": "erase",
+      "x": 542,
+      "y": 474,
+      "w": 67,
+      "h": 81,
+      "strength": 24.9
+    },
+    {
+      "id": 5,
+      "kind": "erase",
+      "x": 477,
+      "y": 365,
+      "w": 54,
+      "h": 62,
+      "strength": 26.0
+    }
+  ],
+  "images": {
+    "a": "a.jpg",
+    "b": "b.jpg"
+  }
+}

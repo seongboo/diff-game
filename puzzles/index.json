@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "puzzles": [
+    {
+      "id": "demo-01",
+      "difficulty": "hard",
+      "count": 5,
+      "verified": true
+    },
+    {
+      "id": "demo-02",
+      "difficulty": "easy",
+      "count": 5,
+      "verified": true
+    },
+    {
+      "id": "demo-03",
+      "difficulty": "easy",
+      "count": 5,
+      "verified": true
+    }
+  ]
+}
